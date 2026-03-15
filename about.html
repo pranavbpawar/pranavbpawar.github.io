@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Pranav Pawar</title>
+    <link rel="icon" type="image/jpeg" href="images/prof.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-brand">
+            Dracky 
+        </div>
+        <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+            <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
+        <ul class="nav-links" role="menubar">
+            <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+            <li role="none"><a href="about.html" class="active" role="menuitem" aria-current="page">About</a></li>
+            <li role="none"><a href="projects.html" role="menuitem">Projects</a></li>
+            <li role="none"><a href="https://drackyjr.github.io/" role="menuitem">Blogs</a></li>
+            <li role="none"><a href="index.html#skills" role="menuitem">Skills</a></li>
+            <li role="none"><a href="index.html#platforms" role="menuitem">Insights</a></li>
+            <li role="none"><a href="index.html#contact" role="menuitem">Contact</a></li>
+        </ul>
+        <div class="nav-search">
+            <button class="search-toggle" aria-label="Toggle search" aria-expanded="false">
+                <i class="fas fa-search" aria-hidden="true"></i>
+            </button>
+            <div class="search-container" role="search">
+                <input type="text" class="search-input" placeholder="Search projects and skills..." aria-label="Search projects and skills">
+                <div class="search-results" role="listbox" aria-label="Search results"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Theme Switch -->
+    <div class="theme-switch">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light theme">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+            <i class="fas fa-sun" aria-hidden="true"></i>
+        </button>
+    </div>
+
+    <section class="about" aria-labelledby="about-heading">
+        <div class="about-container">
+            <!-- Profile image removed -->
+            <div class="about-content">
+                <h2 id="about-heading" class="about-title">About Me</h2>
+                <p class="about-intro">Hi, I'm Pranav B. Pawar (Dracky)</p>
+                <p class="about-description">
+                    I am a passionate Computer Engineering student with a deep interest in cybersecurity and backend
+                    development in automation. Over the course of my studies and projects, I have gained practical
+                    experience working with Python, performing penetration testing, and managing databases using MySQL.
+
+                    I enjoy exploring how technology can be used to make systems more secure and efficient, and I’m
+                    particularly excited about the potential of combining cybersecurity with AI-driven solutions.
+                    My goal is to apply my skills in real-world scenarios, learn from industry professionals, and
+                    contribute to impactful projects in Cyber & AI Security as well as Backend Development.
+                </p>
+
+                <div class="about-highlights" role="list" aria-label="Key expertise areas"> 
+                    <div class="highlight-item" role="listitem">
+                        <i class="fa-solid fa-gears" aria-hidden="true"></i>
+                        <span>Python & Automation</span>
+                    </div>
+                    <div class="highlight-item" role="listitem">
+                        <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                        <span>Computer Engineer</span>
+                    </div>
+                </div>
+
+                <div class="about-achievements">
+                    <h3>Achievements</h3>
+                    <ul>
+                        <li>All India Rank (AIR) 15 at NEC IIT Bombay</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2021-2026 Pranav Pawar. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="search.js"></script>
+</body>
+</html>

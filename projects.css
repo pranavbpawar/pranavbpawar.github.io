@@ -1,0 +1,425 @@
+/* ========================================
+   PROJECTS PAGE SPECIFIC STYLES
+   ======================================== */
+
+:root {
+    --random-bg-image: url('../images/background.jpg');
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: var(--bg-primary);
+}
+
+.projects {
+    position: relative;
+    min-height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 5rem 2rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Background overlay for better content visibility */
+#animated-background::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        135deg,
+        rgba(0, 0, 0, 0.85) 0%,
+        rgba(0, 0, 0, 0.7) 100%
+    );
+    z-index: -1;
+}
+
+/* Dark theme adjustments */
+[data-theme="dark"] #animated-background {
+    filter: brightness(0.4) contrast(1.2);
+}
+
+[data-theme="light"] #animated-background {
+    filter: brightness(0.9) contrast(1.1);
+}
+
+/* Full screen background */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: var(--random-bg-image);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: brightness(0.7);
+    z-index: -1;
+    transition: background-image 1s ease-in-out;
+    animation: backgroundFade 1s ease-in-out;
+}
+
+[data-theme="dark"] body::before {
+    filter: brightness(0.4) contrast(1.2);
+}
+
+[data-theme="light"] body::before {
+    filter: brightness(0.9) contrast(1.1);
+}
+
+/* Add overlay with animation */
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        135deg,
+        rgba(0, 0, 0, 0.85) 0%,
+        rgba(0, 0, 0, 0.7) 100%
+    );
+    z-index: -1;
+    transition: opacity 0.5s ease;
+}
+
+/* Add fade animation for background changes */
+@keyframes backgroundFade {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Update GitHub button styles */
+[data-theme="dark"] .github-link {
+    background: #1a1a1a;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+[data-theme="dark"] .github-link:hover {
+    background: #333;
+    transform: translateY(-2px);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+[data-theme="light"] .github-link {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+[data-theme="light"] .github-link:hover {
+    background: #000000;
+}
+
+.projects-header {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto 3rem auto;
+    padding: 0 1rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.projects-header h2 {
+    color: var(--text-color);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.projects-header h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: var(--primary-color);
+    margin: 1rem auto 0;
+    border-radius: 2px;
+}
+
+.projects-search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 250px;
+}
+
+.projects-search-input {
+    width: 100%;
+    padding: 0.8rem 2.5rem 0.8rem 1.5rem;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+    color: var(--text-color);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.projects-search-input:focus {
+    outline: none;
+    border-bottom-color: var(--primary-color);
+}
+
+.projects-search-input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.projects-search-icon {
+    position: absolute;
+    right: 0.5rem;
+    color: var(--text-color);
+    font-size: 1rem;
+    pointer-events: none;
+    transition: color 0.3s ease;
+}
+
+.projects-search-input:focus + .projects-search-icon {
+    color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .projects-header {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    .projects-search {
+        width: 100%;
+    }
+
+    .projects-header h2 {
+        font-size: 2rem;
+    }
+}
+
+.projects-grid {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+/* Dark theme styles */
+[data-theme="dark"] .project-box {
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+[data-theme="dark"] .project-box:hover {
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.3);
+}
+
+[data-theme="dark"] .project-box p,
+[data-theme="dark"] .project-features li {
+    color: #fff;
+}
+
+/* Light theme styles */
+[data-theme="light"] .project-box {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="light"] .project-box:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    }
+
+[data-theme="light"] .project-box h3 {
+    color: #333;
+    }
+
+[data-theme="light"] .project-box p,
+[data-theme="light"] .project-features li {
+    color: #666;
+}
+
+/* ========================================
+   PROJECT CARD COMPONENTS
+   ======================================== */
+
+.project-box {
+    border-radius: var(--radius-2xl);
+    padding: var(--space-8);
+    text-align: center;
+    transition: var(--transition-all);
+    position: relative;
+    overflow: hidden;
+    animation: fadeInUp 0.6s ease-out forwards;
+    opacity: 0;
+    background: var(--surface-primary);
+    border: 1px solid var(--border-primary);
+    box-shadow: var(--shadow-md);
+}
+
+.project-box:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--border-focus);
+}
+
+.project-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--gradient-secondary);
+    transform: scaleX(0);
+    transition: var(--transition-all);
+}
+
+.project-box:hover::before {
+    transform: scaleX(1);
+}
+
+.project-icon {
+    font-size: var(--text-5xl);
+    margin-bottom: var(--space-6);
+    color: var(--primary-color);
+    transition: var(--transition-all);
+}
+
+.project-box:hover .project-icon {
+    transform: scale(1.1);
+    color: var(--primary-hover);
+}
+
+.project-box h3 {
+    font-size: var(--text-2xl);
+    margin-bottom: var(--space-4);
+    color: var(--text-primary);
+    font-weight: var(--font-semibold);
+}
+
+.project-box p {
+    margin-bottom: var(--space-6);
+    line-height: var(--leading-relaxed);
+    color: var(--text-secondary);
+}
+
+.project-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 var(--space-6) 0;
+    text-align: left;
+}
+
+.project-features li {
+    margin-bottom: var(--space-3);
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    color: var(--text-secondary);
+    line-height: var(--leading-relaxed);
+}
+
+.project-features li i {
+    color: var(--success);
+    font-size: var(--text-sm);
+    flex-shrink: 0;
+}
+
+.project-links {
+    margin-top: auto;
+}
+
+.github-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-3);
+    padding: var(--space-4) var(--space-6);
+    background: var(--primary-color);
+    color: var(--text-inverse);
+    text-decoration: none;
+    border-radius: var(--radius-full);
+    transition: var(--transition-all);
+    font-weight: var(--font-medium);
+    font-size: var(--text-sm);
+    letter-spacing: var(--tracking-wide);
+    min-height: 44px;
+    border: 2px solid var(--primary-color);
+}
+
+.github-link:hover {
+    background: var(--primary-hover);
+    border-color: var(--primary-hover);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.github-link:focus {
+    outline: 2px solid var(--border-focus);
+    outline-offset: 2px;
+}
+
+.github-link i {
+    font-size: var(--text-lg);
+} 
+
+@media (max-width: 768px) {
+    .projects {
+        padding: 0 1rem;
+    }
+
+    .projects-header h2 {
+        font-size: 2rem;
+    }
+
+    .project-box {
+        padding: 1.5rem;
+    }
+}
+
+/* Animation for project boxes */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Stagger animation for multiple boxes */
+.project-box:nth-child(1) { animation-delay: 0.1s; }
+.project-box:nth-child(2) { animation-delay: 0.2s; }
+.project-box:nth-child(3) { animation-delay: 0.3s; }
+.project-box:nth-child(4) { animation-delay: 0.4s; }
+.project-box:nth-child(5) { animation-delay: 0.5s; } 

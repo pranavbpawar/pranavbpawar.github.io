@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dracky</title>
+    <link rel="icon" type="image/jpeg" href="images/prof.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-brand">
+            Dracky
+        </div>
+
+        <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+            <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
+        <ul class="nav-links" role="menubar">
+            <li role="none"><a href="index.html" class="active" role="menuitem" aria-current="page">Home</a></li>
+            <li role="none"><a href="about.html" role="menuitem">About</a></li>
+            <li role="none"><a href="projects.html" role="menuitem">Projects</a></li>
+            <li role="none"><a href="https://drackyjr.github.io/" role="menuitem">Blogs</a></li>
+            <li role="none"><a href="index.html#skills" role="menuitem">Skills</a></li>
+            <li role="none"><a href="index.html#platforms" role="menuitem">Insights</a></li>
+            <li role="none"><a href="index.html#contact" role="menuitem">Contact</a></li>
+            <li role="none"><a href="index.html#resume" role="menuitem">Resume</a></li>
+
+        </ul>
+        <div class="nav-search">
+            <button class="search-toggle" aria-label="Toggle search" aria-expanded="false">
+                <i class="fas fa-search" aria-hidden="true"></i>
+            </button>
+            <div class="search-container" role="search">
+                <input type="text" class="search-input" placeholder="Search projects and skills"
+                    aria-label="Search projects and skills">
+                <div class="search-results" role="listbox" aria-label="Search results"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Theme Switch -->
+    <div class="theme-switch">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light theme">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+            <i class="fas fa-sun" aria-hidden="true"></i>
+        </button>
+    </div>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1> </h1>
+
+
+
+            <button class="scroll-down" aria-label="Scroll to skills section">
+                <i class="fas fa-chevron-down arrow2" aria-hidden="true"></i>
+            </button>
+        </div>
+    </section>
+    <section id="skills" class="skills" aria-labelledby="skills-heading">
+        <h2 id="skills-heading">Skills & Expertise</h2>
+        <div class="skills-grid" role="list" aria-label="Skills and expertise areas">
+            <article class="skill-card" role="listitem">
+                <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                <h3>Technical and Security</h3>
+                <ul>
+                    <li>Scripting (Python & Bash)</li>
+                    <li>Networking and Security Concepts (IP/TCP, SIEM)</li>
+                    <li>Pentesting</li>
+                    <li>CTF & Realistic Lab Experience</li>
+                </ul>
+            </article>
+
+            <article class="skill-card" role="listitem">
+                <i class="fas fa-users" aria-hidden="true"></i>
+                <h3>Cloud & Infrastructure</h3>
+                <ul>
+                    <li>Linux Structure</li>
+                    <li>AWS (EC2)</li>
+                    <li>Virtualization & Labs (VMWare, Docker)</li>
+                    <li>Data Structures</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+    <section id="platforms" class="platforms" aria-labelledby="platforms-heading">
+        <h2 id="platforms-heading">Labs & Tech</h2>
+        <div class="platforms-grid" role="list" aria-label="Platform achievements and profiles">
+            <article class="platform-card" role="listitem">
+                <i class="fas fa-terminal" aria-hidden="true"></i>
+                <h3>TryHackMe</h3>
+                <p>Rank: <span class="rank">Top 2%</span></p>
+                <a href="https://tryhackme.com/p/dracky4u" target="_blank" class="platform-link"
+                    aria-label="View TryHackMe profile (opens in new tab)">View Profile</a>
+            </article>
+            <article class="platform-card" role="listitem">
+                <i class="fas fa-cube" aria-hidden="true"></i>
+                <h3>HackTheBox</h3>
+                <p>Rank: <span class="rank">Hacker</span></p>
+                <a href="https://app.hackthebox.com/profile/2032115" target="_blank" class="platform-link"
+                    aria-label="View HackTheBox profile (opens in new tab)">View Profile</a>
+            </article>
+        </div>
+    </section>
+    <section id="contact" class="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact & Connect</h2>
+        <div class="contact-content">
+            <p class="contact-intro">Let's connect and discuss how we can work together to enhance your organization's
+                security posture.</p>
+            <div class="social-links" role="list" aria-label="Social media and contact links">
+                <a href="https://github.com/drackyjr" target="_blank" class="social-link" title="GitHub" role="listitem"
+                    aria-label="Visit GitHub profile (opens in new tab)">
+                    <i class="fab fa-github" aria-hidden="true"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/pranavbpawar/" target="_blank" class="social-link" title="LinkedIn"
+                    role="listitem" aria-label="Visit LinkedIn profile (opens in new tab)">
+                    <i class="fab fa-linkedin" aria-hidden="true"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://t.me/Dracky4u" target="_blank" class="social-link" title="Telegram" role="listitem"
+                    aria-label="Contact via Telegram (opens in new tab)">
+                    <i class="fab fa-telegram" aria-hidden="true"></i>
+                    <span>Telegram</span>
+                </a>
+                <a href="mailto:pranavbpawar@outlook.com" class="social-link" title="Email" role="listitem"
+                    aria-label="Send email">
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                    <span>Email</span>
+                </a>
+                <a href="https://www.youtube.com/channel/UCGC238_xClAEOneLOHZN5fQ" target="_blank" class="social-link"
+                    title="YouTube" role="listitem" aria-label="Visit YouTube channel (opens in new tab)">
+                    <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                    <span>YouTube</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== RESUME SECTION ===== -->
+    <section id="resume" class="resume-section" aria-labelledby="resume-heading">
+        <h2 id="resume-heading">My Resume</h2>
+        <div class="resume-container">
+            <div class="resume-actions">
+                <a href="pranav.pdf" download="Pranav_Pawar_Resume.pdf" class="resume-btn resume-btn-download"
+                    aria-label="Download Resume PDF">
+                    <i class="fas fa-download" aria-hidden="true"></i>
+                    Download Resume
+                </a>
+                <a href="pranav.pdf" target="_blank" class="resume-btn resume-btn-view"
+                    aria-label="Open Resume in new tab">
+                    <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                    Open in New Tab
+                </a>
+            </div>
+            <div class="resume-viewer">
+                <iframe src="pranav.pdf#toolbar=1&navpanes=0&scrollbar=1" title="Pranav Pawar Resume"
+                    aria-label="Embedded resume PDF" loading="lazy">
+                    <p>Your browser does not support embedded PDFs.
+                        <a href="pranav.pdf" download>Click here to download the resume</a>.
+                    </p>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2021-2026 Pranav Pawar. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="search.js"></script>
+    <script src="contact.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const timelineItems = document.querySelectorAll('.timeline-item');
+
+            const options = {
+                threshold: 0.5
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, options);
+
+            timelineItems.forEach(item => {
+                observer.observe(item);
+            });
+        });
+    </script>
+</body>
+
+</html>

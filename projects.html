@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects & Experience - Pranav Pawar</title>
+    <link rel="icon" type="image/jpeg" href="images/prof.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="animated-background"></div>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-brand">
+            Dracky
+        </div>
+        <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+            <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
+        <ul class="nav-links" role="menubar">
+            <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+            <li role="none"><a href="about.html" role="menuitem">About</a></li>
+            <li role="none"><a href="projects.html" class="active" role="menuitem" aria-current="page">Projects</a></li>
+            <li role="none"><a href="https://drackyjr.github.io/" role="menuitem">Blogs</a></li>
+            <li role="none"><a href="index.html#skills" role="menuitem">Skills</a></li>
+            <li role="none"><a href="index.html#platforms" role="menuitem">Insights</a></li>
+            <li role="none"><a href="index.html#contact" role="menuitem">Contact</a></li>
+        </ul>
+        <div class="nav-search">
+            <button class="search-toggle" aria-label="Toggle search" aria-expanded="false">
+                <i class="fas fa-search" aria-hidden="true"></i>
+            </button>
+            <div class="search-container" role="search">
+                <input type="text" class="search-input" placeholder="Search projects and skills..." aria-label="Search projects and skills">
+                <div class="search-results" role="listbox" aria-label="Search results"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Theme Switch -->
+    <div class="theme-switch">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light theme">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+            <i class="fas fa-sun" aria-hidden="true"></i>
+        </button>
+    </div>
+
+    <section id="projects" class="projects" aria-labelledby="projects-heading">
+        <div class="projects-header">
+            <h2 id="projects-heading">Projects & Experience</h2>
+        </div>
+        <div class="projects-grid" role="list" aria-label="Project portfolio">
+           
+
+            <article class="project-box" role="listitem">
+                <h3>WebCapture V1.0.1</h3>
+                <p>An OSINT reconnaissance tool that extracts critical intelligence from websites—uncovering domains, subdomains, emails, technologies, and more from a single URL input.</p>
+                <ul class="project-features" role="list" aria-label="Project features">
+                    <li><i class="fas fa-check" aria-hidden="true"></i>Target Enumeration from a Single URL</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i>Subdomain Discovery</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i>Email & Phone Scraper</li>
+                </ul>
+                <div class="project-links">
+                    <a href="https://github.com/drackyjr/WEBCAPTURE" target="_blank" class="github-link" aria-label="View WebCapture project on GitHub (opens in new tab)">
+                        <i class="fab fa-github" aria-hidden="true"></i> View on GitHub
+                    </a>
+                </div>
+            </article>
+
+            <article class="project-box" role="listitem">
+                <h3>Employee Trust Score Tool Extension</h3>
+                <p>A cross-platform browser extension with a Flask backend to manage employee logins using behavioral scoring and risk-based access control.</p>
+                <ul class="project-features" role="list" aria-label="Project features">
+                    <li><i class="fas fa-check" aria-hidden="true"></i>Syncing data with Supabase</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i>Blocking suspicious access</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i>Works on Linux, Windows, and macOS</li>
+                </ul>
+                <div class="project-links">
+                    <a href="https://github.com/drackyjr/Walmart_Hackethon_2025" target="_blank" class="github-link" aria-label="View Employee Trust Score Tool on GitHub (opens in new tab)">
+                        <i class="fab fa-github" aria-hidden="true"></i> View on GitHub
+                    </a>
+                </div>
+            </article>
+            
+            <article class="project-box" role="listitem">
+                <h3>Neko Scan</h3>
+                <p>NekoScan is a fast, colorful, and fun terminal-based TCP port scanner with animated ASCII cats and live port discovery.</p>
+                <ul class="project-features" role="list" aria-label="Project features">
+                    <li><i class="fas fa-check" aria-hidden="true"></i>Ultra-fast multithreaded TCP scanning (1000 threads by default)</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i>Live tracking of discovered open ports</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i>Works on Linux, Windows, and macOS</li>
+                </ul>
+                <div class="project-links">
+                    <a href="https://github.com/drackyjr/NekoScan" target="_blank" class="github-link" aria-label="View Neko Scan project on GitHub (opens in new tab)">
+                        <i class="fab fa-github" aria-hidden="true"></i> View on GitHub
+                    </a>
+                </div>
+            </article>
+
+            <article class="project-box" role="listitem">
+                <h3>Git Automation Script</h3>
+                <p>A Professional Bash script designed to simplify and automate common Git workflows.</p>
+                <ul class="project-features" role="list" aria-label="Project features">
+                    <li><i class="fas fa-check" aria-hidden="true"></i>Automatically create and switch branches with validation</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i>Validates repo state, branch existence and command success</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i>Enhances clarity and user experience in the terminal</li>
+                </ul>
+                <div class="project-links">
+                    <a href="https://github.com/drackyjr/Git-Automation-Script" target="_blank" class="github-link" aria-label="View Git Automation Script on GitHub (opens in new tab)">
+                        <i class="fab fa-github" aria-hidden="true"></i> View on GitHub
+                    </a>
+                </div>
+            </article>
+              <article class="project-box" role="listitem">
+                <h3>WEBTALK V3 Model</h3>
+                <p>Developed a lightweight vulnerability scanner with Google Dorks for admin panel discovery, automated SQLi/XSS checks, authenticated scans, OWASP Top 10 coverage, and a user-friendly results dashboard.</p>
+                <ul class="project-features" role="list" aria-label="Project features">
+                    <li><i class="fas fa-check" aria-hidden="true"></i>Python development</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i>Web security implementation</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i>Secure communication protocols</li>
+                </ul>
+                <div class="project-links">
+                    <a href="https://github.com/drackyjr/WEBTALK" target="_blank" class="github-link" aria-label="View WEBTALK V3 project on GitHub (opens in new tab)">
+                        <i class="fab fa-github" aria-hidden="true"></i> View on GitHub
+                    </a>
+                </div>
+            </article>
+
+             <article class="project-box" role="listitem">
+                <h3>Dragon-Key</h3>
+                <p>A lightweight, real-time keylogger designed for security auditing and penetration testing.</p>
+                <ul class="project-features" role="list" aria-label="Project features">
+                    <li><i class="fas fa-check" aria-hidden="true"></i>Security auditing tool</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i>Penetration testing utility</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i>Ethical hacking demonstration</li>
+                </ul>
+                <div class="project-links">
+                    <a href="https://github.com/drackyjr/dragon-key" target="_blank" class="github-link" aria-label="View Dragon-Key project on GitHub (opens in new tab)">
+                        <i class="fab fa-github" aria-hidden="true"></i> View on GitHub
+                    </a>
+                </div>
+            </article>
+
+            
+            <article class="project-box" role="listitem">
+                <h3>Email Spam Filter</h3>
+                <p>Machine learning-based email spam filtering system developed using Jupyter Notebook.</p>
+                <ul class="project-features" role="list" aria-label="Project features">
+                    <li><i class="fas fa-check" aria-hidden="true"></i>Machine learning implementation</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i>Email security</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i>Data analysis and filtering</li>
+                </ul>
+                <div class="project-links">
+                    <a href="https://github.com/drackyjr/EMAIL-SPAM-FILTER" target="_blank" class="github-link" aria-label="View Email Spam Filter project on GitHub (opens in new tab)">
+                        <i class="fab fa-github" aria-hidden="true"></i> View on GitHub
+                    </a>
+                </div>
+            </article>
+            
+            <article class="project-box" role="listitem">
+                <h3>TCPCHAT</h3>
+                <p>A Python-based client-server communication system demonstrating networking fundamentals.</p>
+                <ul class="project-features" role="list" aria-label="Project features">
+                    <li><i class="fas fa-check" aria-hidden="true"></i>TCP server-client architecture</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i>Real-time message exchange</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i>Socket programming</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i>Efficient communication system</li>
+                </ul>
+                <div class="project-links">
+                    <a href="https://github.com/drackyjr/TCPCHAT" target="_blank" class="github-link" aria-label="View TCPCHAT project on GitHub (opens in new tab)">
+                        <i class="fab fa-github" aria-hidden="true"></i> View on GitHub
+                    </a>
+                </div>
+            </article>
+            
+            <article class="project-box" role="listitem">
+                <div class="project-icon">
+                    <i class="fas fa-folder-open" aria-hidden="true"></i>
+                </div>
+                <h3>Other Projects</h3>
+                <p>Explore more of my projects and contributions on GitHub.</p>
+                <ul class="project-features" role="list" aria-label="Project features">
+                    <li><i class="fas fa-check" aria-hidden="true"></i>Various security tools</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i>Open source contributions</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i>Research projects</li>
+                </ul>
+                <div class="project-links">
+                    <a href="https://github.com/drackyjr?tab=repositories" target="_blank" class="github-link" aria-label="View all projects on GitHub (opens in new tab)">
+                        <i class="fab fa-github" aria-hidden="true"></i> View All Projects
+                    </a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2021-2026 Pranav Pawar. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="search.js"></script>
+</body>
+</html> 
